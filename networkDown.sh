@@ -13,7 +13,7 @@ pushd ../test-network
 popd
 
 # clean out any old identites in the wallets
-pushd ../data-transfer/application
+pushd ../hyperledger-dataTransfer/application
 rm -rf wallet/*
 popd
 

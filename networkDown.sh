@@ -1,0 +1,26 @@
+#!/bin/bash
+#
+# Copyright IBM Corp All Rights Reserved
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+# Exit on first error
+set -ex
+
+# Bring the test network down
+pushd ../test-network
+./network.sh down
+popd
+
+# clean out any old identites in the wallets
+pushd ../data-transfer/application
+rm -rf wallet/*
+popd
+
+# print message
+cat <<EOF
+
+Network down is done !
+    Bye Bye ...
+
+EOF

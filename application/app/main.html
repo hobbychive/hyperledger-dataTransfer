@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Data Transfer DApp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="title">
+      <a href="/">
+        <h1>Data Transfer DApp</h1>
+      </a>
+      <div id="pjp">pjp_trio</div>
+    </div>
+
+    <div class="container">
+      <div id="allDatas">
+        <h3>Current All Datas</h3>
+        <form action="/GetAllDatas" method="get">
+          Get All Datas <br />
+          <input type="submit" value="get all datas" />
+          <!-- <button type="button" onclick="location.href='getAllAssets.html'">get all asset</button> -->
+        </form>
+      </div>
+
+      <div id="getSeller">
+        <h3>Search Datas by Seller</h3>
+        <form action="/GetSeller" method="get">
+          Get Datas by Seller :
+          <input name="seller" type="text" size="20" /><br />
+          <input type="submit" value="get seller" />
+        </form>
+      </div>
+
+      <div id="getBuyer">
+        <h3>Search Datas by Buyer</h3>
+        <form action="/GetBuyer" method="get">
+          Get Datas by Buyer :
+          <input name="buyer" type="text" size="20" /><br />
+          <input type="submit" value="get buyer" />
+        </form>
+      </div>
+
+      <div id="dataExists">
+        <h3>Data Exists</h3>
+        <form action="/DataExists" method="get">
+          Data transaction ID : <input name="id" type="text" size="20" /><br />
+          <input type="submit" value="data exists" />
+        </form>
+      </div>
+
+      <div id="readData">
+        <h3>Read Data</h3>
+        <form action="/ReadData" method="get">
+          Data transaction ID : <input name="id" type="text" size="20" /><br />
+          <input type="submit" value="read data" />
+        </form>
+      </div>
+
+      <div id="transferData">
+        <h3>Transfer Data</h3>
+        <form action="/TransferData" method="get">
+          Data Transfer ID : <input name="id" type="text" size="20" /><br />
+          Data newBuyer : <input name="newBuyer" type="text" size="20" /><br />
+          <input type="submit" value="transfer data" />
+        </form>
+      </div>
+
+      <div id="CreateData">
+        <h3>Create Data</h3>
+        <form action="/CreateData" method="get">
+          ID : <input name="id" type="text" size="20" /><br />
+          Buyer : <input name="buyer" type="text" size="20" /><br />
+          Seller : <input name="seller" type="text" size="20" /><br />
+          registeredTime :
+          <input name="registeredTime" type="text" size="20" /><br />
+          transactionTime :
+          <input name="transactionTime" type="text" size="20" /><br />
+          description : <input name="description" type="text" size="20" /><br />
+          dataCategory :
+          <input name="dataCategory" type="text" size="20" /><br />
+          recordnum : <input name="recordnum" type="text" size="20" /><br />
+          columnnum : <input name="columnnum" type="text" size="20" /><br />
+          similarity : <input name="similarity" type="text" size="20" /><br />
+          retention : <input name="retention" type="text" size="20" /><br />
+          value : <input name="value" type="text" size="20" /><br />
+          price : <input name="price" type="text" size="20" /><br />
+          capacity : <input name="capacity" type="text" size="20" /><br />
+          possessionTransfer :
+          <input name="possessionTransfer" type="text" size="20" /><br />
+          prevTransfer <input name="prevTransfer" type="text" size="20" /><br />
+
+          <input type="submit" value="create data" />
+        </form>
+      </div>
+
+      <div id="UpdateData">
+        <h3>Update Data</h3>
+        <form action="/UpdateData" method="get">
+          ID : <input name="id" type="text" size="20" /><br />
+          Buyer : <input name="buyer" type="text" size="20" /><br />
+          Seller : <input name="seller" type="text" size="20" /><br />
+          registeredTime :
+          <input name="registeredTime" type="text" size="20" /><br />
+          transactionTime :
+          <input name="transactionTime" type="text" size="20" /><br />
+          description : <input name="description" type="text" size="20" /><br />
+          dataCategory :
+          <input name="dataCategory" type="text" size="20" /><br />
+          recordnum : <input name="recordnum" type="text" size="20" /><br />
+          columnnum : <input name="columnnum" type="text" size="20" /><br />
+          similarity : <input name="similarity" type="text" size="20" /><br />
+          retention : <input name="retention" type="text" size="20" /><br />
+          value : <input name="value" type="text" size="20" /><br />
+          price : <input name="price" type="text" size="20" /><br />
+          capacity : <input name="capacity" type="text" size="20" /><br />
+          possessionTransfer :
+          <input name="possessionTransfer" type="text" size="20" /><br />
+          prevTransfer <input name="prevTransfer" type="text" size="20" /><br />
+
+          <input type="submit" value="update data" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

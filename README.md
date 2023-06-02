@@ -3,6 +3,9 @@
 ##### by 박조박트리오
 Sangwon Park: https://github.com/hobbychive, Junsik Cho: https://github.com/dzv123, Donghwan Park: https://github.com/srpark13
 
+### Reference
+https://hyperledger-fabric.readthedocs.io/en/release-2.2/
+
 ### 개발환경 구성
 Docker, git. curl, golang, node, npm을 설치한 후, 다음의 명령어로 하이퍼레저 2.2.10을 설치한다.
 * fabric 개발환경 구성 참고: https://hobbychive.github.io/posts/ubuntu-fabric-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0/
